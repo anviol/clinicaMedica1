@@ -1,3 +1,5 @@
+import lib.Exame;
+
 import java.sql.*;
 import java.io.Console;
 import java.util.Scanner;
@@ -37,5 +39,7 @@ public class Main {
                 break;
             }
         }
+
+        Exame exame = new Exame();
     }
 }

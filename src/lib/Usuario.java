@@ -1,5 +1,7 @@
+package lib;
+
 /*
- * Criação da classe Usuario
+ * Criação da classe lib.Usuario
  * Superclasse para todas as personas do projeto
  */
 public class Usuario {
@@ -33,7 +35,7 @@ public class Usuario {
      */
 
     /*
-     * Consulta dos valores de todos atributos da classe
+     * lib.Consulta dos valores de todos atributos da classe
      */
     public String getNome() {
         return nome;

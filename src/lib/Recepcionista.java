@@ -1,3 +1,5 @@
+package lib;
+
 public class Recepcionista extends Usuario{
 
     /*
@@ -33,11 +35,9 @@ public class Recepcionista extends Usuario{
 
     /**
      * @param consulta
-     * @return
      */
     public void desmarcarConsulta(Consulta consulta) {
         // TODO implement here
-        return null;
     }
 
     /**
@@ -54,10 +54,8 @@ public class Recepcionista extends Usuario{
 
     /**
      * @param exame
-     * @return
      */
     public void desmarcarExame(Exame exame) {
         // TODO implement here
-        return null;
     }
 }
