@@ -1,11 +1,25 @@
 package lib;
 
-public class Laboratorio {
+public class Laboratorio extends Usuario {
 
     /*
      * Atributos da classe
      */
     public long CNPJ;
+
+    /*
+     * Atribuição de valores aos atributos da classe
+     */
+    public void setCNPJ(long CNPJ) {
+        this.CNPJ = CNPJ;
+    }
+
+    /*
+     * Consulta dos valores de todos atributos da classe
+     */
+    public long getCNPJ() {
+        return CNPJ;
+    }
 
     /**
      * @param exame

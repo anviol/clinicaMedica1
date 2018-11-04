@@ -52,7 +52,7 @@ public class Recepcionista extends Usuario{
         return null;
     }
 
-    /**
+    /*
      * @param exame
      */
     public void desmarcarExame(Exame exame) {

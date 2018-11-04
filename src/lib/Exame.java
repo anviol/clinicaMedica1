@@ -9,11 +9,22 @@ public class Exame {
     protected Paciente paciente;
     protected Medico medico;
     protected String tipo;
+    protected String resultado;
     protected String informacoes;
     protected String dataHora;
-    protected boolean realizado;
-    protected boolean cancelado;
+    private boolean realizado;
+    private boolean cancelado;
 
+    /**
+     * Default constructor
+     */
+    public Exame(Paciente paciente, Medico medico, String tipo) {
+        setPaciente(paciente);
+        setMedico(medico);
+        setTipo(tipo);
+        setRealizado(false);
+        setCancelado(false);
+    }
 
     /*
      * Atribuição de valores aos atributos da classe
@@ -32,6 +43,10 @@ public class Exame {
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
+    }
+
+    public void setResultado(String resultado) {
+        this.resultado = resultado;
     }
 
     public void setInformacoes(String informacoes) {
@@ -70,6 +85,10 @@ public class Exame {
         return tipo;
     }
 
+    public String getResultado() {
+        return resultado;
+    }
+
     public String getInformacoes() {
         return informacoes;
     }
@@ -78,11 +97,21 @@ public class Exame {
         return dataHora;
     }
 
-    public boolean setRealizado() {
-        return realizado;
+    public boolean isCancelado() { return cancelado; }
+
+    public boolean isRealizado() { return realizado; }
+
+    /*
+     * Metodo para marcar uma exame como realizdo
+     */
+    public void realizar(){
+        setRealizado(true);
     }
 
-    public boolean setCancelado() {
-        return cancelado;
+    /*
+     * Metodo para cancelar um exame
+     */
+    public void cancelar(){
+        setRealizado(true);
     }
 }

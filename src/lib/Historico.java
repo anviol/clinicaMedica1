@@ -1,39 +1,66 @@
 package lib;
 
+import java.util.ArrayList;
+
 public class Historico {
-    /**
-     *
+    /*
+     * Atributos da classe
      */
-    protected String nomePaciente;
+    protected Paciente paciente;
+    protected ArrayList<Consulta> consultas;
+    protected ArrayList<Exame> exames;
 
-    /**
-     *
-     */
-    protected ArrayList listaConsultas;
 
     /**
-     *
+     * Default constructor
      */
-    protected ArrayList listaExames;
+    public Historico (Paciente paciente){
+        setPaciente(paciente);
+    }
 
+    /*
+     * Atribuição de valores aos atributos da classe
+     */
+    public void setPaciente(Paciente paciente) {
+        this.paciente = paciente;
+    }
 
+    public void setConsultas(ArrayList<Consulta> consultas) {
+        this.consultas = consultas;
+    }
 
+    public void setExames(ArrayList<Exame> exames) {
+        this.exames = exames;
+    }
+
+    /*
+     * Consulta dos valores de todos atributos da classe
+     */
+    public Paciente getPaciente() {
+        return paciente;
+    }
+
+    public ArrayList<Consulta> getConsultas() {
+        return consultas;
+    }
+
+    public ArrayList<Exame> getExames() {
+        return exames;
+    }
 
     /**
      * @param consulta
-     * @return
+     * Metodo para adicionar nova consulta ao historico do paciente
      */
-    public void addConsulta(Consulta consulta) {
+    public void adicionarConsulta(Consulta consulta) {
         // TODO implement here
-        return null;
     }
 
     /**
      * @param exame
-     * @return
+     * Metodo para adicionar novo exame ao historico do paciente
      */
-    public void addExame(Exame exame) {
+    public void adicionarExame(Exame exame) {
         // TODO implement here
-        return null;
     }
 }

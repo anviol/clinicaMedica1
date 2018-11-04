@@ -8,14 +8,10 @@ public class Horarios {
      */
     private ArrayList<Consulta> consultas;
     private ArrayList<Exame> exames;
-    /*
-     * Fim dos atributos
-     */
 
     /*
      * Atribuição de valores aos atributos da classe
      */
-
     public void setConsultas(ArrayList<Consulta> consultas) {
         this.consultas = consultas;
     }
@@ -23,14 +19,10 @@ public class Horarios {
     public void setExames(ArrayList<Exame> exames) {
         this.exames = exames;
     }
-    /*
-     * Fim das atribuições
-     */
 
     /*
-     * lib.Consulta dos valores de todos atributos da classe
+     * Consulta dos valores de todos atributos da classe
      */
-
     public ArrayList<Consulta> getConsultas() {
         return consultas;
     }
@@ -38,13 +30,9 @@ public class Horarios {
     public ArrayList<Exame> getExames() {
         return exames;
     }
-    /*
-     * Fim das consultas
-     */
 
     /**
      * @param consulta
-     * @return
      */
     public void marcarHorario(Consulta consulta) {
         // TODO implement here
@@ -52,7 +40,6 @@ public class Horarios {
 
     /**
      * @param exame
-     * @return
      */
     public void marcarHorario(Exame exame) {
         // TODO implement here
@@ -60,7 +47,6 @@ public class Horarios {
 
     /**
      * @param consulta
-     * @return
      */
     public void desmarcarHorario(Consulta consulta) {
         // TODO implement here
@@ -68,7 +54,6 @@ public class Horarios {
 
     /**
      * @param exame
-     * @return
      */
     public void desmarcarHorario(Exame exame) {
         // TODO implement here

@@ -1,7 +1,7 @@
 package lib;
 
 /*
- * Criação da classe lib.Usuario
+ * Criação da classe Usuario
  * Superclasse para todas as personas do projeto
  */
 public class Usuario {
@@ -12,9 +12,6 @@ public class Usuario {
     private String nome;
     private String login;
     private String senha;
-    /*
-     * Fim dos atributos
-     */
 
     /*
      * Atribuição de valores aos atributos da classe
@@ -30,9 +27,6 @@ public class Usuario {
     public void setSenha(String senha) {
         this.senha = senha;
     }
-    /*
-     * Fim das atribuições
-     */
 
     /*
      * lib.Consulta dos valores de todos atributos da classe
@@ -48,7 +42,5 @@ public class Usuario {
     public String getSenha() {
         return senha;
     }
-    /*
-     * Fim das consultas
-     */
+
 }

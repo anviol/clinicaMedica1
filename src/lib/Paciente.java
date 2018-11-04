@@ -15,7 +15,7 @@ public class Paciente extends Usuario{
     }
 
     /*
-     * lib.Consulta dos valores de todos atributos da classe
+     * Consulta dos valores de todos atributos da classe
      */
     public long getCPF() {
         return CPF;
