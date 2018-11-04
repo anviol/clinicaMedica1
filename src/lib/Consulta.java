@@ -19,7 +19,7 @@ public class Consulta {
      * @param paciente
      * @param medico
      */
-    public Consulta(Paciente paciente, Medico medico) {
+    public Consulta(Paciente paciente, Medico medico, int id) {
         setPaciente(paciente);
         setMedico(medico);
         setRealizada(false);
@@ -87,6 +87,14 @@ public class Consulta {
 
     public boolean isCancelada() {
         return cancelada;
+    }
+
+    public String getNomePaciente(){
+        return paciente.getNome();
+    }
+
+    public String getNomeMedico(){
+        return medico.getNome();
     }
 
     /*

@@ -16,7 +16,6 @@ class UsuarioTest {
     String senhaTeste1 = "123";
     String senhaTeste2 = "1234";
 
-
     @Test
     void setNome() {
 

@@ -21,7 +21,7 @@ class PacienteTest {
 
     @Test
     void setCPF() {
-        paciente.setCPF(7443371004L);
+        paciente.setCPF(CPFTeste2);
 
         assertEquals("A alteração do CPF foi mal feita.", (long) CPFTeste2, paciente.getCPF());
         assertNotEquals("A alteração do CPF não foi feita.", (long) CPFTeste1, paciente.getCPF());
@@ -30,7 +30,7 @@ class PacienteTest {
     @Test
     void setNome() {
 
-        paciente.setNome("Bruno");
+        paciente.setNome(nomeTeste2);
 
         assertEquals("A alteração do nome foi mal feita.", 0, nomeTeste2.compareTo(paciente.getNome()));
         assertNotEquals("A alteração do nome não foi feita.", 0, nomeTeste1.compareTo(paciente.getNome()));
@@ -38,14 +38,14 @@ class PacienteTest {
 
     @Test
     void setLogin() {
-        paciente.setLogin("bruno");
+        paciente.setLogin(loginTeste2);
 
         assertEquals("A alteração do login não foi feita.", 0, loginTeste2.compareTo(paciente.getLogin()));
     }
 
     @Test
     void setSenha() {
-        paciente.setSenha("1234");
+        paciente.setSenha(senhaTeste2);
 
         assertEquals("A alteração do senha não foi feita.", 0, senhaTeste2.compareTo(paciente.getSenha()));
     }
