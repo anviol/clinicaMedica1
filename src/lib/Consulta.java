@@ -13,6 +13,19 @@ public class Consulta {
     private boolean realizada;
     private boolean cancelada;
 
+    /**
+     * Default constructor
+     *
+     * @param paciente
+     * @param medico
+     */
+    public Consulta(Paciente paciente, Medico medico) {
+        setPaciente(paciente);
+        setMedico(medico);
+        setRealizada(false);
+        setCancelada(false);
+    }
+
     /*
      * Atribuição de valores aos atributos da classe
      */

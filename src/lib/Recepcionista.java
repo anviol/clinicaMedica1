@@ -5,20 +5,33 @@ public class Recepcionista extends Usuario{
     /*
      * Atributos da classe
      */
-    private int idRecepcionista;
+    private int id;
+
+    /*
+     * Default constructor
+     *
+     * @param nome
+     * @param login
+     * @param senha
+     * @param id
+     */
+    public Recepcionista(String nome, String login, String senha, int id) {
+        super(nome, login, senha);
+        setId(id);
+    }
 
     /*
      * Atribuição de valores aos atributos da classe
      */
-    public void setIdRecepcionista(int idRecepcionista) {
-        this.idRecepcionista = idRecepcionista;
+    public void setId(int id) {
+        this.id = id;
     }
 
     /*
      * Consulta dos valores de todos atributos da classe
      */
-    public int getIdRecepcionista() {
-        return idRecepcionista;
+    public int getId() {
+        return id;
     }
 
     /**

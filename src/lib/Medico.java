@@ -8,6 +8,19 @@ public class Medico extends Usuario{
     private long CRM;
 
     /*
+     * Default constructor
+     *
+     * @param nome
+     * @param login
+     * @param senha
+     * @param CRM
+     */
+    public Medico(String nome, String login, String senha,long CRM) {
+        super(nome, login, senha);
+        setCRM(CRM);
+    }
+
+    /*
      * Atribuição de valores aos atributos da classe
      */
     public void setCRM(long CRM) {

@@ -8,6 +8,19 @@ public class Laboratorio extends Usuario {
     public long CNPJ;
 
     /*
+     * Default constructor
+     *
+     * @param nome
+     * @param login
+     * @param senha
+     * @param CNPJ
+     */
+    public Laboratorio(String nome, String login, String senha,long CNPJ) {
+        super(nome, login, senha);
+        setCNPJ(CNPJ);
+    }
+
+    /*
      * Atribuição de valores aos atributos da classe
      */
     public void setCNPJ(long CNPJ) {

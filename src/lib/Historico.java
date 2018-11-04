@@ -13,6 +13,8 @@ public class Historico {
 
     /**
      * Default constructor
+     *
+     * @param paciente
      */
     public Historico (Paciente paciente){
         setPaciente(paciente);

@@ -17,6 +17,10 @@ public class Exame {
 
     /**
      * Default constructor
+     *
+     * @param paciente
+     * @param medico
+     * @param tipo
      */
     public Exame(Paciente paciente, Medico medico, String tipo) {
         setPaciente(paciente);

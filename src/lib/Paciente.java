@@ -8,6 +8,19 @@ public class Paciente extends Usuario{
     public long CPF;
 
     /*
+     * Default constructor
+     *
+     * @param nome
+     * @param login
+     * @param senha
+     * @param CPF
+     */
+    public Paciente(String nome, String login, String senha, long CPF) {
+        super(nome, login, senha);
+        setCPF(CPF);
+    }
+
+    /*
      * Atribuição de valores aos atributos da classe
      */
     public void setCPF(long CPF) {

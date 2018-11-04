@@ -14,6 +14,19 @@ public class Usuario {
     private String senha;
 
     /*
+     * Default constructor
+     *
+     * @param nome
+     * @param login
+     * @param senha
+     */
+    public Usuario(String nome, String login, String senha) {
+        setNome(nome);
+        setLogin(login);
+        setSenha(senha);
+    }
+
+    /*
      * Atribuição de valores aos atributos da classe
      */
     public void setNome(String nome) {
@@ -29,7 +42,7 @@ public class Usuario {
     }
 
     /*
-     * lib.Consulta dos valores de todos atributos da classe
+     * Consulta dos valores de todos atributos da classe
      */
     public String getNome() {
         return nome;
@@ -42,5 +55,7 @@ public class Usuario {
     public String getSenha() {
         return senha;
     }
+
+
 
 }
