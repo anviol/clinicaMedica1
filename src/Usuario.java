@@ -1,52 +1,52 @@
 /*
-* Criação da classe Usuario
-* Superclasse para todas as personas do projeto
-*/
+ * Criação da classe Usuario
+ * Superclasse para todas as personas do projeto
+ */
 public class Usuario {
 
     /*
-    * Atributos da calsse Usuario
-    */
+     * Atributos da classe
+     */
     private String nome;
     private String login;
     private String senha;
     /*
-    * Fim dos atributos
-    */
+     * Fim dos atributos
+     */
 
     /*
-    * Atribuição de valores aos atributos da classe
-    */
-    private void setNome(String nome) {
+     * Atribuição de valores aos atributos da classe
+     */
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    private void setLogin(String login) {
+    public void setLogin(String login) {
         this.login = login;
     }
 
-    private void setSenha(String senha) {
+    public void setSenha(String senha) {
         this.senha = senha;
     }
     /*
-    * Fim da atribuição de valores
-    */
+     * Fim das atribuições
+     */
 
     /*
-    * Consulta dos valores de todos atributos da classe
-    */
-    private String getNome() {
+     * Consulta dos valores de todos atributos da classe
+     */
+    public String getNome() {
         return nome;
     }
 
-    private String getLogin() {
+    public String getLogin() {
         return login;
     }
 
-    private String getSenha() {
+    public String getSenha() {
         return senha;
     }
     /*
-    * Fim da consulta aos valores
-    */
+     * Fim das consultas
+     */
 }
