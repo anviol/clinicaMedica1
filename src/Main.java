@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Conexão Firebird
+        // Conexão SQLite
         Connection connection = null;
         Statement statement = null;
         try {
@@ -22,17 +22,20 @@ public class Main {
         Scanner entrada = new Scanner(System.in);
         String login, senhaCorreta = "123", senha;
 
-        System.out.println("Master Clínica seu programa de clínicas médicas!\n");
-        System.out.print("Login: ");
-        login = entrada.next();
+        while (true){
+            System.out.println("Master Clínica seu programa de clínicas médicas!\n");
+            System.out.print("Login: ");
+            login = entrada.next();
 
-        System.out.print("Senha: ");
-        senha = entrada.next();
+            System.out.print("Senha: ");
+            senha = entrada.next();
 
-        if (senha.compareTo(senhaCorreta) == 0){
-            System.out.println("\nBem vindo " + login + "!");
-        }else {
-            System.out.println("\nSenha incorreta!");
+            if (senha.compareTo(senhaCorreta) == 0){
+                System.out.println("\nBem vindo, " + login + "!");
+            }else {
+                System.out.println("\nSenha incorreta!");
+                break;
+            }
         }
     }
 }
