@@ -39,7 +39,5 @@ public class Main {
                 break;
             }
         }
-
-        Exame exame = new Exame();
     }
 }
