@@ -2,7 +2,7 @@ package lib;
 
 public class Exame {
 
-    /*
+    /**
      * Atributos da classe
      */
     protected int id;
@@ -30,7 +30,7 @@ public class Exame {
         setCancelado(false);
     }
 
-    /*
+    /**
      * Atribuição de valores aos atributos da classe
      */
     public void setId(int id) {
@@ -70,7 +70,7 @@ public class Exame {
     }
 
 
-    /*
+    /**
      * Consulta dos valores de todos atributos da classe
      */
     public int getId() {
@@ -105,14 +105,14 @@ public class Exame {
 
     public boolean isRealizado() { return realizado; }
 
-    /*
+    /**
      * Metodo para marcar uma exame como realizdo
      */
     public void realizar(){
         setRealizado(true);
     }
 
-    /*
+    /**
      * Metodo para cancelar um exame
      */
     public void cancelar(){
